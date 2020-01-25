@@ -1,0 +1,42 @@
+#include <iostream> 
+using namespace std; 
+
+int main() 
+
+{
+
+
+double milk, bread, cheese;
+double milkAvgprice=3.99;
+double cheeseAvgprice=1.99;
+double breadAvgprice=9.99;
+
+double total, hst, grandtotal;
+
+cout << " How many cartons of milk do you want " << endl; 
+cin  >> milk;
+
+cout << " How many blocks of cheese do you want " << endl; 
+cin  >> cheese;
+
+cout << " How many loaves of bread do you want " << endl; 
+cin  >> bread; 
+
+total = milkAvgprice*milk+cheeseAvgprice*cheese+breadAvgprice*bread;
+
+hst = total*0.13;
+
+grandtotal = total+hst;
+
+cout << "total before hst" << total << endl;
+cin  >>  total;  
+
+cout << "total after hst" << hst << endl;
+
+cout << "What is the grandtotal" << grandtotal << endl;
+
+system("pause");
+return 0; 
+
+
+}  
